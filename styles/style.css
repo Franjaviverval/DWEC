@@ -13,7 +13,7 @@
    --color-border: #334155;
 }
 
-a{
+a {
    text-decoration: none;
 }
 
@@ -35,14 +35,14 @@ body {
    color: var(--color-light-font);
 }
 
-.page-header__init:hover{
+.page-header__init:hover {
    color: var(--color-secondary-accent);
 }
 
 .page-header__title {
    color: var(--color-bright-font);
    text-align: center;
-   font-size: clamp(2rem, 2rem + 1dvw, 3rem);   
+   font-size: clamp(2rem, 2rem + 1dvw, 3rem);
 }
 
 .index {
@@ -54,9 +54,12 @@ body {
    list-style: disc;
    color: var(--color-main-accent);
    font-size: clamp(1.25rem, 1.25rem + 1dvw, 2rem);
+   display: flex;
+   flex-direction: column;
+   gap: 25px;
 }
 
-.index-list__link {   
+.index-list__link {
    color: var(--color-light-font);
 }
 
