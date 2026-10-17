@@ -26,8 +26,10 @@ function writeLine(line) {
    document.querySelector('.console').append(paragraph);
 }
 
+//Creamos nuestro map a partir de las palabras que nos pasa el usuario
 let words = countWords(getUserWords());
-const keys = words.keys();
 
-for (let key of keys)
-   writeLine(`${key} => ${words.get(key)}`);
+//Mostramos las repeticiones de cada palabra
+words.forEach((value, key) => {
+   writeLine(`${key} => ${value}`);
+});
