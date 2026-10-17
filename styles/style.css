@@ -11,6 +11,7 @@
    --color-main-accent: #38BDF8;
    --color-secondary-accent: #818CF8;
    --color-border: #334155;
+   --color-console: #333;
 }
 
 a {
@@ -42,7 +43,7 @@ body {
 .page-header__title {
    color: var(--color-bright-font);
    text-align: center;
-   font-size: clamp(2rem, 2rem + 1dvw, 3rem);
+   font-size: clamp(1.75rem, 2rem + 1dvw, 3rem);
 }
 
 .index {
@@ -65,4 +66,15 @@ body {
 
 .index-list__link:hover {
    color: var(--color-secondary-accent);
+}
+
+.console {
+   width: 100%;
+   max-width: 600px;
+   min-height: 400px;
+   padding: 50px;
+   margin: 100px auto;
+   color: var(--color-light-font);
+   font-size: 2rem;
+   background-color: var(--color-console);
 }
