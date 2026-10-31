@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Ejercicio U6P1E2</title>
+   <script src="scripts/ejercicio2.js" defer></script>
+   <link rel="stylesheet" href="../../../styles/style.css">
+</head>
+
+<body>
+   <article class="console">
+      <form class="form">
+         <div class="form__element">
+            <label for="input-email" class="form__label">Email</label>
+            <input type="email" class="form__input" id="input-email" name="email" required>
+            <p id="email-fail" class="form__message">Error - formato: xxxx@yyyy.zzzz</p>
+         </div>
+         <div class="form__element">
+            <label for="input-password" class="form__label">Contraseña</label>
+            <input type="password" class="form__input" id="input-password" name="password" minlength="8" maxlength="10"
+               required>
+            <p id="password-fail" class="form__message">Error - longitud debe estar entre 8 y 10 caracteres</p>
+         </div>
+         <button type="submit" class="form__button simple-button" id="btn-submit" disabled="true">Enviar</button>
+      </form>
+   </article>
+</body>
+
+</html>
